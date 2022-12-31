@@ -9,6 +9,7 @@ h2 {
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
+  word-wrap: normal;
 }
 
 h3 {
@@ -64,6 +65,13 @@ header {
   color: #fff;
 }
 
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 header nav ul li {
   list-style-type: none;
 }
@@ -80,29 +88,53 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
-form {
+fieldset {
   border: 2px solid #ff385c;
   padding: 10px;
+  
+}
+
+form {
+  display: flex;
+  justify-content:space-between;
+
 }
 
 form label {
   font-weight: bold;
+  padding-left: 10px;
+  
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  margin-right: 10px;
 }
 
-form button {
+button {
   background-color: #ff385c;
   border: none;
   color: #fff;
   font-size: 24px;
   padding: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
   width: 100%;
 }
+
+/* -------  About ------- */
+
+/* .group {
+  display: flex;
+
+} */
+
+section div div img {
+  width: 100%
+}
+
 
 /* -------  Footer ------- */
 
@@ -117,3 +149,68 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and ( min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 38px;
+    padding-top: 5px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  fieldset {
+    display: flex;
+    justify-content: space-between;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  form label{
+    padding-left: 0px;
+  }
+
+  button {
+    width:180px;
+  }
+  form select,
+form input {
+  margin-bottom: 10px;
+}
+
+.abouttxt {
+  display: flex;
+  flex: 2;
+  align-items: center;
+}
+
+.hosttxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ideasgroup div img {
+  width: 100%;
+}
+
+.ideasgroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ideasgroup .item {
+  width: calc(50% - 20px);
+  flex: none;
+}
+
+}
