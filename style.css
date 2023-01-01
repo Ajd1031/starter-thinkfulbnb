@@ -126,10 +126,11 @@ button {
 
 /* -------  About ------- */
 
-/* .group {
+.group {
   display: flex;
+  flex-direction: column;
 
-} */
+}
 
 section div div img {
   width: 100%
@@ -150,7 +151,8 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and ( min-width: 480px) {
+@media all and (min-width: 480px) {
+
   header {
     display: flex;
     justify-content: space-between;
@@ -179,7 +181,7 @@ footer p {
   }
 
   button {
-    width:180px;
+    width: 180px;
   }
   form select,
 form input {
