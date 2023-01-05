@@ -97,10 +97,21 @@ header nav ul li a:hover {
  
 }
 
+.search {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 form {
   display: flex;
   justify-content:space-between;
 
+}
+
+.searchForm div {
+  margin-right: 20px;
 }
 
 form label {
@@ -112,15 +123,17 @@ form label {
 .searchForm {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  contain: content;
+  width: 100%;
 }
 
-form select,
-form input {
+form label,
+form input, form select {
   margin-bottom: 20px;
-  margin-right: 10px;
   width: 100%;
   display: flex;
+  flex: 1;
 }
 
 button {
@@ -128,6 +141,10 @@ button {
   border: none;
   color: #fff;
   font-size: 20px;
+  margin: 0;
+  flex: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* -------  About ------- */
@@ -182,9 +199,9 @@ footer p {
     padding-left: 0px;
   }
 
-  button {
+  /* button {
     width: 180px;
-  }
+  } */
   form select,
 form input {
   margin-bottom: 10px;
@@ -219,6 +236,13 @@ form input {
 
 .searchForm {
   flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.search {
+  flex-direction: column;
 }
 
 }
