@@ -35,38 +35,47 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
-        <fieldset class = "group">
-          <form >
-            <label for="location" >Location</label>
-            <input name="location" id="location" type="text" placeholder="Search destination">
-          </form>
-          <form>
-            <label for="arrivaldate">Arrive</label>
-            <input type="date" name="arrivaldate" id="arrivaldate">
+        <div id ="searchForm" class="group">
+          <form class="searchForm">
+          <label for="location" >Location</label>
+              <input name="location" id="location" type="text" placeholder="Search destination">
+              <div>
+                
+              <div>
+                <label for="arrivaldate">Arrive</label>
+                <input type="date" name="arrivaldate" id="arrivaldate">
   
-          </form>
-          <form>
-            <label for="departuredate">Depart</label>
-            <input type="date" id="departuredate" name="departuredate">
+              </div>
             
-          </form>
-          <form >
-            <label for="housetype">Type</label>
-            <select name="housetype" id="housetype" size="1">
-              <option value="Apartment">Apartment</option>
-              <option value="Barn">Barn</option>
-              <option value="Castle">Castle</option>
-              <option value="Houseboat">Houseboat</option>
-              <option value="TinyHouse">Tiny House</option>
-              <option value="Yacht">Yacht</option>
-              <option value="Yurt">Yurt</option>
-            </select>
-          </form>
-          <form action="">
-            <button type="submit">Search</button>
-          </form>
+              <div>
+                <label for="departuredate">Depart</label>
+                <input type="date" id="departuredate" name="departuredate">
+  
+              </div>
+              
+            
+              <div>
+                <label for="housetype">Type</label>
+                <select name="housetype" id="housetype" size="1">
+                  <option value="Apartment">Apartment</option>
+                  <option value="Barn">Barn</option>
+                  <option value="Castle">Castle</option>
+                  <option value="Houseboat">Houseboat</option>
+                  <option value="TinyHouse">Tiny House</option>
+                  <option value="Yacht">Yacht</option>
+                  <option value="Yurt">Yurt</option>
+                </select>
+  
+              </div>
+            
+              
+              
+                <button type="submit" class="item">Search</button>
+              
+  
+            </form>
 
-        </fieldset>
+        </div>
         
       </section>
 

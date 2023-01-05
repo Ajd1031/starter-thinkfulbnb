@@ -24,6 +24,7 @@ p {
 
 section {
   padding: 20px;
+  box-sizing: border-box;
 }
 
 section.alternate-background {
@@ -88,10 +89,12 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
-fieldset {
+#searchForm {
   border: 2px solid #ff385c;
   padding: 10px;
-  
+  display: flex;
+  box-sizing: border-box;
+ 
 }
 
 form {
@@ -103,34 +106,33 @@ form {
 form label {
   font-weight: bold;
   padding-left: 10px;
-  
+  display: flex;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
   margin-right: 10px;
+  width: 100%;
+  display: flex;
 }
 
 button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
-  padding: 15px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 100%;
+  font-size: 20px;
 }
 
 /* -------  About ------- */
 
-.group {
-  display: flex;
-  flex-direction: column;
 
-}
 
 section div div img {
   width: 100%
@@ -213,6 +215,10 @@ form input {
 .ideasgroup .item {
   width: calc(50% - 20px);
   flex: none;
+}
+
+.searchForm {
+  flex-direction: row;
 }
 
 }
