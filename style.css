@@ -241,8 +241,14 @@ form input {
   align-content: space-between;
 }
 
+.searchForm div {
+  margin-right: 0;
+}
+
 .search {
   flex-direction: column;
+  width: 20%;
+  margin-left: 0;
 }
 
 }
